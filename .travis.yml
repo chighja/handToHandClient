@@ -3,3 +3,10 @@ node_js: node
 cache:
   directories:
     - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: p82k1ts6NOexdTbuPh3QXgpDZchdgjhcIdf9XG6xkpWoig+YQmxR8F96Ay9l8DDGALXMa0wJzYm/EgpXMfkhh3qq41M/VZhB8JiGssqc7oihQdqccYVxyGQL0VPTes4bes4WvuaVmrK1HG7Elq9s7p1c/R44ZEZlI9/IAAePhzuNxZCp80v5Zw1I/CeHTIzSeNr3GCy2Q/TNI0QJzx3tb0sXUNXNqfIVszIBwzgpC36Jh5HWWiUWOfbvta3x9mFLWXNsNQ9xxnM0C8Fkfm4/PBZvNV6/Tc6zxCa8Fj3D+Q1DJN9YFSepN7Xk9t5ikYiJQRM5+dUIlTAtP5sjHrI9eg44xrSN2pwPLTFRygZzEj5T463TS2+3RiuGaHp6NAO3SKqZhjKQrFWCUaSlKvd68dmrH3Hqr/ZU2e4xTj0n2Bkd6IsapR1/VIRtxs3Idydpe//jsJQrxXbb6hJDmIFON8KkQnX3FZi+LDto06Z8qxWb6Y/mfRkBJ089RQhN/02dI+Am9Gh+tEgExsmxoqDD9x8nADci4I5nmSV90j/mfq7nsL8YiqceElTXTIiWiVTkUMUpjsFlu8Y3JVeWjHiRrIhs+YgrvnGt7BHv3BmoFYyMfWg9gqJLHeJ0XuBLNJENuhCQo2ZMmVkY/n6tm/y7VQlE8tna/8gwNIV2qEp/gGc=
+  app: warm-inlet-87726
+  on:
+    repo: chighja/handToHandClient
