@@ -4,7 +4,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <a href="JavaScript: location.reload(true);">
+        <a href="/">
           <h1>Hand-To-Hand</h1>
         </a>
         <h2>A comic book character match-up!</h2>

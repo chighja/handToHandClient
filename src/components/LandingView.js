@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+function getdata() {}
 
 class LandingView extends Component {
   render() {
     return (
       <div>
         <form id="getBtn">
-          <button type="submit">Click me!</button>
-          <label for="btn">Click this button</label>
+          <Link to="/matches">
+            <button type="submit">Click me!</button>
+          </Link>
+          <label htmlFor="btn">Click this button</label>
         </form>
-        <p class="about">
+        <p className="about">
           and vote on which characters would win each match-up!
         </p>
       </div>

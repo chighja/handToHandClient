@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
+import CharVote from './CharVote';
+import CharScore from './CharScore';
 
 class PlaceCard extends Component {
+  state = { hasVoted: false };
+
+  vote = e => {
+    e.preventDefault();
+    let char1 = e.target.querySelector('#char1');
+    const votedFor = char1.checked ? 'char1' : 'char2';
+    console.log(votedFor);
+    this.setState({ hasVoted: true });
+  };
+
   render() {
     return (
       <div>
-        <form action="">
-          <fieldset>
-            <input type="radio" id="char1" name="char" value="1" />
-            <label for="char1">char1</label>
-            <input type="radio" id="char2" name="char" value="2" />
-            <label for="char2">char2</label>
-            <button>Submit</button>
-          </fieldset>
-        </form>
+        <section className="imageBox">
+          <img src="./images/batman.jpg" alt="batman" width="200" />
+          <img src="./images/bobafett.jpg" alt="Boba Fett" width="200" />
+        </section>
+        {!this.state.hasVoted ? (
+          <CharVote onSubmit={this.vote} />
+        ) : (
+          <CharScore />
+        )}
       </div>
     );
   }

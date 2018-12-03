@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PlaceCard from './components/PlaceCard';
-import Header from './components/Header';
+import App from './components/App';
 
 ReactDOM.render(
   <div>
-    <Header />
-    <PlaceCard />
+    <App />
   </div>,
   document.getElementById('root')
 );
