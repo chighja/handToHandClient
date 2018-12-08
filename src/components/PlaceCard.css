@@ -1,0 +1,15 @@
+.images {
+  width: 95%;
+}
+
+.imgContainer {
+  background-color: greenyellow;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.box {
+  /* m-height: ; */
+}
