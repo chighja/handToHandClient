@@ -29,7 +29,7 @@ class PlaceCard extends Component {
           const { vote } = await res.json();
           this.setState({
             hasVoted: true,
-            updatedVote: vote
+            updatedMatch: vote
           });
         } catch (error) {
           this.setState({
@@ -55,7 +55,7 @@ class PlaceCard extends Component {
         {!this.state.hasVoted ? (
           <CharVote onSubmit={this.vote} char1={nameChar1} char2={nameChar2} />
         ) : (
-          <CharScore updatedVote={this.state.updatedVote} />
+          <CharScore updatedMatch={this.state.updatedMatch} />
         )}
       </div>
     );

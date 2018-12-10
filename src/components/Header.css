@@ -1,0 +1,29 @@
+/* .Header {
+  padding: 10px;
+  background-image: linear-gradient(
+    to top,
+    #000000,
+    #131313,
+    #1f1f1f,
+    #2b2b2b,
+    #373737
+  );
+} */
+
+.title {
+  text-decoration: none;
+  text-shadow: 2px 2px 5px #395dc1, 0 0 25px #070caf, 0 0 5px #0e1164;
+  color: #ffffff;
+}
+
+.title:hover {
+  text-decoration: underline;
+  color: #c5c7de;
+  text-shadow: 2px 2px 5px #ee3a3a, 0 0 25px #b61f1f, 0 0 5px #770d0d;
+}
+
+.headText {
+  color: #395dc1;
+  text-shadow: 2px 2px 5px #070caf, 0 0 5px #0e1164;
+  font-style: italic;
+}

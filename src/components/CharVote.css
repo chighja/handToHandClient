@@ -1,0 +1,17 @@
+.charRadio {
+  margin: 10px;
+}
+
+.charRadio:hover {
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px #395dc1, 0 0 25px #070caf, 0 0 5px #0e1164;
+}
+
+.radio:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.charForm fieldset {
+  border: none;
+}

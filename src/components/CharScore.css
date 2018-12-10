@@ -1,0 +1,5 @@
+.scoreChar {
+  display: inline-flex;
+  align-items: center;
+  margin: 1em;
+}

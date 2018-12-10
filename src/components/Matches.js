@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import CharVote from './CharVote';
-import CharScore from './CharScore';
 import { API_BASE_URL } from '../config';
 import PlaceCard from './PlaceCard';
 
