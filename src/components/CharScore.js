@@ -10,7 +10,7 @@ class CharScore extends Component {
       voteChar2
     } = this.props.updatedMatch;
     return (
-      <div>
+      <div className="voteBox">
         <section className="scoreChar mainText">
           <h3 className="vtFont voteText">{voteChar1}</h3>
           <p> - {nameChar1}</p>

@@ -5,7 +5,7 @@ import './LandingView.css';
 class LandingView extends Component {
   render() {
     return (
-      <div className="landingBox">
+      <div className="landingBox voteBox">
         <form id="getBtn">
           <Link to="/matches">
             <button

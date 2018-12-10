@@ -1,15 +1,20 @@
+.box {
+  display: flex;
+  justify-items: center;
+  width: 100vw;
+  border-radius: 5px;
+  box-shadow: 1px -1px 106px 7px rgba(0, 0, 0, 0.75) inset;
+}
+
 .imgContainer {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 50vw;
 }
 
 .images {
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
   width: 95%;
-}
-
-.box {
-  overflow: hidden;
-  width: 100vw;
+  max-width: 700px;
 }
