@@ -5,7 +5,10 @@ import { API_BASE_URL } from '../config';
 import './PlaceCard.css';
 
 class PlaceCard extends Component {
-  state = { hasVoted: false };
+  state = {
+    hasVoted: false,
+    isActive: false
+  };
 
   vote = e => {
     e.preventDefault();
@@ -42,6 +45,7 @@ class PlaceCard extends Component {
 
   render() {
     const { image1, image2, nameChar1, nameChar2 } = this.props.match;
+    const isActive = this.state.isActive;
     return (
       <div>
         <section className="box">
@@ -53,7 +57,12 @@ class PlaceCard extends Component {
           </div>
         </section>
         {!this.state.hasVoted ? (
-          <CharVote onSubmit={this.vote} char1={nameChar1} char2={nameChar2} />
+          <CharVote
+            onSubmit={this.vote}
+            char1={nameChar1}
+            char2={nameChar2}
+            isActive={isActive}
+          />
         ) : (
           <CharScore updatedMatch={this.state.updatedMatch} />
         )}

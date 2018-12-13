@@ -21,3 +21,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.hideBtn {
+  display: none;
+}
+
+.visibleBtn {
+  display: inline;
+}
