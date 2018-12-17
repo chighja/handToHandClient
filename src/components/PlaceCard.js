@@ -52,7 +52,6 @@ class PlaceCard extends Component {
           <div className="imgContainer">
             <img src={image1} alt={nameChar1} className="images" />
           </div>
-          <p className="vtFont">VS</p>
           <div className="imgContainer">
             <img src={image2} alt={nameChar2} className="images" />
           </div>
