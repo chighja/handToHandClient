@@ -30,8 +30,13 @@
   display: inline;
 }
 
+.vsBox {
+  display: flex;
+  justify-content: center;
+}
+
 .vs {
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
   text-shadow: 2px 2px 5px #395dc1, 0 0 25px #070caf, 0 0 5px #0e1164;
 }

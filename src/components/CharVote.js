@@ -31,7 +31,7 @@ class CharVote extends Component {
               <label htmlFor={char1} className="radio mainText">
                 {char1}
               </label>
-              <div>
+              <div className="vsBox">
                 <h3 className="vs vtFont popText">VS</h3>
               </div>
               <input
