@@ -32,7 +32,7 @@ class CharVote extends Component {
                 {char1}
               </label>
               <div>
-                <p className="vtFont popText">VS</p>
+                <h3 className="vs vtFont popText">VS</h3>
               </div>
               <input
                 type="radio"
