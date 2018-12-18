@@ -19,6 +19,9 @@ class CharVote extends Component {
       <div className="voteBox">
         <form onSubmit={this.props.onSubmit} className="charForm">
           <fieldset>
+            <div className="radioBox">
+              <h3 className="vs vtFont popText">VS</h3>
+            </div>
             <section className="radioBox">
               <input
                 type="radio"
@@ -31,9 +34,6 @@ class CharVote extends Component {
               <label htmlFor={char1} className="radio mainText">
                 {char1}
               </label>
-              <div className="vsBox">
-                <h3 className="vs vtFont popText">VS</h3>
-              </div>
               <input
                 type="radio"
                 id={char2}

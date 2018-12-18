@@ -30,11 +30,6 @@
   display: inline;
 }
 
-.vsBox {
-  display: flex;
-  justify-content: center;
-}
-
 .vs {
   margin-left: 2em;
   margin-right: 2em;
