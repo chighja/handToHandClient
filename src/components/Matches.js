@@ -10,7 +10,6 @@ class Matches extends Component {
   };
 
   componentDidMount() {
-    // this.logVotes();
     this.fetchVotes();
   }
 

@@ -12,6 +12,7 @@ class CharVote extends Component {
   btnStatus = () => {
     this.setState({ isActive: true });
   };
+
   render() {
     const { char1, char2 } = this.props;
     const { isActive } = this.state;

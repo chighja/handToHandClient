@@ -46,6 +46,7 @@ class PlaceCard extends Component {
   render() {
     const { image1, image2, nameChar1, nameChar2 } = this.props.match;
     const isActive = this.state.isActive;
+
     return (
       <div>
         <section className="box">
