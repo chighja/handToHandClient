@@ -1,44 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Hand-To-Hand
 
-In the project directory, you can run:
+Hand-To-Hand allows you to cast your votes as to which cross-universe characters would win in their respective match-ups! It's a matter of skill, power, and abilities! With the votes rising for each character, who will remain the most deadly character?
 
-### `npm start`
+### Check it out!
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[View "Hand-To-Hand" here!](https://warm-inlet-87726.herokuapp.com/)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+![Hand To Hand Screenshot](https://farm5.staticflickr.com/4846/45498591915_3264783126_z.jpg)
 
-### `npm test`
+![Hand To Hand Screenshot](https://farm5.staticflickr.com/4851/45498595305_03d5b2e8d6_z.jpg)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Hand To Hand Screenshot](https://farm5.staticflickr.com/4825/45687884394_d76861362c_z.jpg)
 
-### `npm run build`
+![Hand To Hand Screenshot](https://farm5.staticflickr.com/4874/45687885664_c69c952947_z.jpg)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built with
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+This project uses HTML, CSS, and ReactJS for its client side application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can view the repository for the NodeJS server side application [right here.](https://github.com/chighja/handToHandServer)
