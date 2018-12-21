@@ -16,7 +16,7 @@ Hand-To-Hand allows you to cast your votes as to which cross-universe characters
 
 ![Hand To Hand Screenshot](https://farm5.staticflickr.com/4874/45687885664_c69c952947_z.jpg)
 
-### Built with
+### Built with:
 
 This project uses HTML, CSS, and ReactJS for its client side application.
 
