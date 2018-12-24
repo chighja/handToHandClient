@@ -21,3 +21,7 @@ Hand-To-Hand allows you to cast your votes as to which cross-universe characters
 This project uses HTML, CSS, and ReactJS for its client side application.
 
 You can view the repository for the NodeJS server side application [right here.](https://github.com/chighja/handToHandServer)
+
+### To run locally:
+
+Run "npm run go" from your command line.

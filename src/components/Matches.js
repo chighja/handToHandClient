@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { API_BASE_URL } from '../config';
 import PlaceCard from './PlaceCard';
 
 class Matches extends Component {
   state = {
     error: undefined,
-    loading: false,
-    chars: []
+    loading: false
   };
 
   componentDidMount() {
@@ -22,15 +22,25 @@ class Matches extends Component {
       async () => {
         try {
           const res = await fetch(`${API_BASE_URL}/votes`);
-          const chars = await res.json();
-          this.setState({
-            loading: false,
-            chars
+          const matches = await res.json();
+          // this.setState({
+          //   loading: false,
+          //   chars
+          // });
+
+          this.props.dispatch({
+            type: 'FETCH_MATCHES_SUCCESS',
+            payload: { matches }
           });
         } catch (error) {
-          this.setState({
-            error: error.message,
-            loading: false
+          // this.setState({
+          //   error: error.message,
+          //   loading: false
+          // });
+
+          this.props.dispatch({
+            type: 'FETCH_MATCHES_ERROR',
+            payload: { error: error.message }
           });
         }
       }
@@ -38,10 +48,11 @@ class Matches extends Component {
   };
 
   render() {
-    const { chars } = this.state;
+    const { matches } = this.props;
+
     return (
       <div>
-        {chars.map((match, i) => (
+        {matches.map((match, i) => (
           <PlaceCard match={match} key={i} />
         ))}
       </div>
@@ -49,4 +60,6 @@ class Matches extends Component {
   }
 }
 
-export default Matches;
+const mapStateToProps = state => ({ matches: state.matches });
+
+export default connect(mapStateToProps)(Matches);
