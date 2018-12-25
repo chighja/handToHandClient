@@ -51,10 +51,14 @@ class PlaceCard extends Component {
       <div>
         <section className="box">
           <div className="imgContainer">
-            <img src={image1} alt={nameChar1} className="images" />
+            <label for={nameChar1}>
+              <img src={image1} alt={nameChar1} className="images" />
+            </label>
           </div>
           <div className="imgContainer">
-            <img src={image2} alt={nameChar2} className="images" />
+            <label for={nameChar2}>
+              <img src={image2} alt={nameChar2} className="images" />
+            </label>
           </div>
         </section>
         {!this.state.hasVoted ? (

@@ -16,6 +16,7 @@ class CharVote extends Component {
   render() {
     const { char1, char2 } = this.props;
     const { isActive } = this.state;
+
     return (
       <div className="voteBox">
         <form onSubmit={this.props.onSubmit} className="charForm">

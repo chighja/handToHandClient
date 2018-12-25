@@ -1,10 +1,10 @@
 import { createStore } from 'redux';
 
-const initialState = {
+export const initialState = {
   matches: []
 };
 
-const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FETCH_MATCHES_SUCCESS': {
       return {

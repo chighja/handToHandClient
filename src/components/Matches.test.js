@@ -4,24 +4,15 @@ import Matches from './Matches';
 import PlaceCard from './PlaceCard';
 
 describe('<Matches />', () => {
-  const mockChars = ['char1foo', 'char2foo'];
-
-  beforeAll(() => {
-    global.fetch = jest.fn(() =>
-      Promise.resolve({ json: () => Promise.resolve(mockChars) })
-    );
-  });
-
-  const wrapper = shallow(<Matches />);
-
-  wrapper.setState({ chars: mockChars });
+  const matches = [{ nameChar1: 'Toddy' }, { nameChar2: 'Louise' }];
+  const wrapper = shallow(<Matches.WrappedComponent matches={matches} />);
 
   it('should render an array of <PlaceCard /> components', () => {
     expect(
       wrapper.containsAllMatchingElements([
-        <PlaceCard match="char1foo" key={0} />,
-        <PlaceCard match="char2foo" />
+        <PlaceCard match={matches[0]} />,
+        <PlaceCard match={matches[1]} />
       ])
-    ).toBe(true);
+    ).toEqual(true);
   });
 });

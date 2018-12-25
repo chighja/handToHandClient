@@ -12,6 +12,10 @@
   cursor: pointer;
 }
 
+.charRadio:active {
+  box-shadow: 2px 2px 5px #ee3a3a, 0 0 25px #b61f1f, 0 0 5px #770d0d;
+}
+
 .charForm fieldset {
   border: none;
 }

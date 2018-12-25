@@ -5,7 +5,6 @@ import PlaceCard from './PlaceCard';
 
 class Matches extends Component {
   state = {
-    error: undefined,
     loading: false
   };
 
@@ -16,28 +15,18 @@ class Matches extends Component {
   fetchVotes = () => {
     this.setState(
       {
-        error: undefined,
         loading: true
       },
       async () => {
         try {
           const res = await fetch(`${API_BASE_URL}/votes`);
           const matches = await res.json();
-          // this.setState({
-          //   loading: false,
-          //   chars
-          // });
 
           this.props.dispatch({
             type: 'FETCH_MATCHES_SUCCESS',
             payload: { matches }
           });
         } catch (error) {
-          // this.setState({
-          //   error: error.message,
-          //   loading: false
-          // });
-
           this.props.dispatch({
             type: 'FETCH_MATCHES_ERROR',
             payload: { error: error.message }
