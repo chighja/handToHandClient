@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Hand-To-Hand
 
 Hand-To-Hand allows you to cast your votes as to which cross-universe characters would win in their respective match-ups! It's a matter of skill, power, and abilities! With the votes rising for each character, who will remain the most deadly character?
