@@ -4,7 +4,7 @@ Hand-To-Hand allows you to cast your votes as to which cross-universe characters
 
 ### Check it out!
 
-[View "Hand-To-Hand" here!](https://warm-inlet-87726.herokuapp.com/)
+[View "Hand-To-Hand" here!](https://handtohandapp.herokuapp.com/)
 
 ![Hand To Hand Screenshot](https://farm5.staticflickr.com/4846/45498591915_3264783126_z.jpg)
 
